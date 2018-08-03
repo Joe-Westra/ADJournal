@@ -20,8 +20,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include('entry.urls')),
-
-#    path('/', include('entry.urls')),
-#    url(r'^nightlystats/$', include('entry.urls')),
-#    url(r'^stats/$', views.StatsPageView.as_view()),
 ]
