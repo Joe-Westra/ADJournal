@@ -9,17 +9,14 @@
 }
 .header {
     background: black;
-    display: flex;
+    width: 20%
     margin: 0px;
     padding: 0px;
     overflow: auto;
 }
-.header a{
-    text-decoration: none;
-}
 
-.header #logo {
-    width: 50%;
+.header:first-child {
+    width: 25%;
     font-size: 50px;
     color: var(--pastelgreen)
 }
@@ -99,6 +96,7 @@ footer{
 }
 .comparator #coderight{
     background-color: var(--brown);
-    flex:0 0 auto;
+    flex:0 1 auto;
+    align: center;
 }
 
