@@ -1,0 +1,102 @@
+:root {
+    --mutedorange:#dda61d;
+    --dustypink:#917C6F;
+    --olive:#3cb371;
+    --maude:#c3bedd;
+    --pastelgreen:#bbd8b3;
+    --lightpurp: #804f4c;
+    --brown: #442e05;
+}
+.header {
+    background: black;
+    width: 20%
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+.header:first-child {
+    width: 25%;
+    font-size: 50px;
+    color: var(--pastelgreen)
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:mono;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+    background-attachment: local;
+    margin:0;
+    padding:0;
+    color: var(--mutedorange);
+}
+h1{
+    color: var(--pastelgreen);
+}
+.header:first-child {
+    color:#d4aa00;
+}
+
+a{
+    color: var(--dustypink);
+}
+visted{
+    color: var(--maude);
+}
+.main_nav > ul{
+    list-style-type:none;
+    text-shadow: blue 0 0 3px,
+                 cyan 4px 4px 10px,
+                 red 8px 8px 14px;
+                 display:table;
+}
+.main_nav > ul li {
+    display: table-cell;
+    justify-content: center;
+    margin: auto 0;
+    padding:50px;
+    margin:200px;
+
+}
+
+body:read-write{
+    color:green;
+}
+emph{
+    color:grey; 
+    text-shadow: black 0 0 1px;
+}
+
+footer{
+    text-align:center;
+}
+
+.anagram{
+        color:red;
+
+}
+.anagram::first-letter{
+    color:red;
+    font-style:bold;
+}
+
+.comparator {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comparator #codeleft{
+    background-color: var(--lightpurp);
+    flex:0 1 auto;
+}
+.comparator #coderight{
+    background-color: var(--brown);
+    flex:0 1 auto;
+    align: center;
+}
+

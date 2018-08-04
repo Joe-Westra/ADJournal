@@ -2,13 +2,14 @@
 <html lang="en-US">
 <head>
     <meta content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href={% static 'stats/stylesheet.css' %} />
     <title>Welcome Jome</title>
 </head>
 
 <body>
-<header>
-    <h1>Everything is good, all of the time</h1>
+<div class="header">
+    <a href="#" id="logo">Everything is good, all of the time</a>
     <nav class="main_nav">
         <ul>
             <li>Jome</li>
@@ -17,7 +18,9 @@
             <li>TMI blog</li>
         </ul>
     </nav>
-</header>
+</p>
+</div>
+<div class="body">
 <section id="welcome">
 
     <p>This is a test of my html5 and CSS3 skills</p>
@@ -33,7 +36,7 @@
     <ul><li>To learn a Python serverside framework, Django for starters</li>
     <li>To advance my front-end skills</li>
     <li>As a documentation and educational resource for my Data Sciences journey</li></ul></p>
-    <p>Inspired by this guy</p>
+    <p>Inspired by <a href="https://www.youtube.com/watch?v=d5AP2LmSYBM">this guy</a></p>
 </section>
 <section id="blog">
 
@@ -48,13 +51,21 @@
     The <emph>type</emph> is described by tags that enclose the content:</p>
 
     <section class="comparator">
-        <code>
+        <div id="codeleft">
             <p>This is a paragraph, which will start and end with a 'new line'</p>
             <p>Here's another one, where <b>these words</b> are really important</p>
             <a href="http://www.cbc.ca">How about a link to the CBC?</a>
             <p>What about two nested paragraphs?!?!<p>Let's find out!</p></p>
 
-        </code>
+        </div>
+        <div id="coderight">
+<xmp>
+            <p>This is a paragraph, which will start and end with a 'new line'</p>
+            <p>Here's another one, where <b>these words</b> are really important</p>
+            <a href="http://www.cbc.ca">How about a link to the CBC?</a>
+            <p>What about two nested paragraphs?!?!<p>Let's find out!</p></p>
+</xmp>
+        </div>
 
     </section>
 
@@ -64,6 +75,7 @@
 
 
 </section>
+</div>
 <footer>
     <h5>like me in real life!</h5>
 </footer>
