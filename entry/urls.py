@@ -2,7 +2,7 @@ from django.conf.urls import url, include
 from rest_framework.urlpatterns import format_suffix_patterns
 from django.urls import path
 from .views import CreateView, StatsPageView, HomePageView
-#from entry import views
+from entry import views
 
 urlpatterns = [
     path('', HomePageView.as_view(), name="home"),
